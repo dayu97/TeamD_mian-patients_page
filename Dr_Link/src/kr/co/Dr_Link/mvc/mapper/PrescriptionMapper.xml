@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+  
+  <mapper namespace="prescription">
+  
+   <!-- 처방전 -->
+  <select id="detail_prescription" parameterType="PrescriptionDTO" resultType="PrescriptionDTO">
+  	select * from prescription where p_number=#{p_number}
+  </select>
+  
+  <select id="drLink_info" parameterType="DrLinkDTO" resultType="DrLinkDTO">
+  	select * from drlink 
+  </select>
+  
+  <insert id="addPrescription" parameterType="PrescriptionDTO">
+  	insert into prescription values(#{dosage}, #{quantity}, #{days}, 54)
+  </insert> 
+  
+  </mapper>
