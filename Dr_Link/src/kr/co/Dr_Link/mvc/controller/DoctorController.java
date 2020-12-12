@@ -64,15 +64,17 @@ public class DoctorController {
 		String [] dsg = request.getParameterValues("dosage");
 		String [] dys = request.getParameterValues("days");
 		System.out.println(request.getParameterValues("quantity"));
-		/*
-		quantity
+		
 		public void setQuantity(String quantity) {
 			this.quantity = quantity.split(" ");  
-			for (int i=0; i<quantity.222 2 2 2
+			for (int i=0; i<quantity.length(); i++) {
+				this.quantity[i] = quantity.charAt(i);
+			}
 		}
-		[2][2][2]
-		2알, 2알, 2알
-		*/
+		
+		String comment
+		 comment.split("\n");
+
 		for(int i = 0 ; i<Array.getLength(qty) ; i++) {
 			System.out.println(qty[i]);
 			System.out.println(dsg[i]);
