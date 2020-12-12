@@ -4,21 +4,30 @@ public class PrescriptionDTO {
 	private int dep_num;
 	private int medicine_num;
 	private int treatment_num;
-	private String dosage;
-	private String quantity;
-	private String days;
+	private String [] dosage;
+	private String [] quantity;
+	private String [] days;
 	private String payment_check;
 	
 	public int getDep_num() {
 		return dep_num;
 	}
-	public void setDosage(String dosage) {
+	public void setDosage(String [] dosage) {
 		this.dosage = dosage;
 	}
-	public void setQuantity(String quantity) {
+	public void setQuantity(String [] quantity) {
 		this.quantity = quantity;
 	}
-	public void setDays(String days) {
+	public String[] getDosage() {
+		return dosage;
+	}
+	public String[] getQuantity() {
+		return quantity;
+	}
+	public String[] getDays() {
+		return days;
+	}
+	public void setDays(String [] days) {
 		this.days = days;
 	}
 	public void setDep_num(int dep_num) {
